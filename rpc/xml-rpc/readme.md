@@ -1,3 +1,4 @@
+**This demonstration provides a practical implementation of XML-RPC (XML Remote Procedure Call), a protocol that uses XML to encode its calls and HTTP as a transport mechanism. The example illustrates how clients can invoke methods on remote servers, showcasing the request/response pattern, parameter marshaling in XML format, and HTTP-based communication between distributed systems.**<br><br>
 To see how the marshalling/unmarshalling work, follow steps below:
 1. Install [Postman](https://www.postman.com/downloads/)
 2. Run the Server
