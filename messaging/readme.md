@@ -4,11 +4,15 @@
    RabbitMQ can be downloaded from [here](https://www.rabbitmq.com/). Alternatively, for Windows, use rabbitmq-server-4.3.0.exe from [here](https://github.com/rabbitmq/rabbitmq-server/releases)
 3. Execute services: RabbitMQ + worker + result:
    ```
-   root-dir> docker compose up -d --build rabbitmq worker result
+   root-dir> docker compose up -d --build rabbitmq
+   root-dir> docker compose up -d --build worker
+   root-dir> docker compose up -d --build result
    ```
-   OR:
+   OR, if you want to use three (more) workers:
    ```
-   root-dir> docker compose up -d --build --scale worker=3 rabbitmq worker result
+   root-dir> docker compose up -d --build --scale rabbitmq
+   root-dir> docker compose up -d --build --scale worker=3 worker
+   root-dir> docker compose up -d --build --scale result
 4. Send “payment request”:
    ```
    docker compose run --rm producer python producer.py
