@@ -1,7 +1,7 @@
 # Please follow the instructions below to run:
 1. Make sure you have Docker and RabbitMQ running on your system.<br>
    Docker Desktop can be downloaded from [here](https://www.docker.com/get-started/).<br>
-   RabbitMQ can be downloaded from [here](https://www.rabbitmq.com/).
+   RabbitMQ can be downloaded from [here](https://www.rabbitmq.com/). Alternatively, for Windows, use rabbitmq-server-4.3.0.exe from [here](https://github.com/rabbitmq/rabbitmq-server/releases)
 3. Execute services: RabbitMQ + worker + result:
    ```
    root-dir> docker compose up -d --build rabbitmq worker result
