@@ -1,3 +1,4 @@
+**This demonstration utilizes the [gRPC framework](https://grpc.io/) for remote procedure call (RPC) implementation. gRPC handles underlying network communication internally, allowing developers to concentrate primarily on business logic.**<br><br>
 To use this demo, follow steps below:
 1. Create a new python environment:<br>
     ``` python -m venv myenv ```
@@ -18,3 +19,4 @@ To use this demo, follow steps below:
     python server.py
     python client.py
     ```
+
